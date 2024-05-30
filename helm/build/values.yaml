@@ -1,0 +1,15 @@
+app:
+  name: orangedemo-wind-turbine-app
+  namespace: orangedemo
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/orangedemo-wind-turbine
+  org: WindTurbineInc
+  name: orangedemo-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: orangedemo/wind-turbine-app
+  tag: latest
